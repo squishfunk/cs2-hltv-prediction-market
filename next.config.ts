@@ -16,6 +16,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      // Allow any HTTPS image source for flexibility with mock data if needed
+      // In a real app, restrict this to known CDNs/image sources
+      {
+        protocol: 'https',
+        hostname: '**', 
+      }
     ],
   },
 };
